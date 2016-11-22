@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Album edition</h1>
+                {{ form_start(edit_form) }}
+                {{ form_row(edit_form.titreAlbum, { 'attr': {'class': 'form-control input-lg'}}) }}
+                {{ form_row(edit_form.artiste, { 'attr': {'class': 'form-control input-lg'}}) }}
+                {{ form_row(edit_form.genre, { 'attr': {'class': 'form-control input-lg'}}) }}
+                {{ form_row(edit_form.support, { 'attr': {'class': 'form-control input-lg'}}) }}
+                <input type="submit" value="Create" />
+                {{ form_end(edit_form) }}
+
+                <ul>
+                    <li>
+                        <a href="{{ path('album_index') }}">Back to the list</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
