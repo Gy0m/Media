@@ -155,6 +155,7 @@ class Album
 	/**
 	 * @ORM\OneToMany(targetEntity="Commentaire", mappedBy="album", cascade={"remove", "persist"})
 	 */
+	private $commentaire;
 
     /**
      * Constructor

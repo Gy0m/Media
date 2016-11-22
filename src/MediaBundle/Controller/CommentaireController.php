@@ -18,7 +18,7 @@ class CommentaireController extends Controller
     /**
      * Lists all commentaire entities.
      *
-     * @Route("/commentaire", name="commentaire_index")
+     * @Route("/index", name="commentaire_index")
      * @Method("GET")
      */
     public function indexAction()

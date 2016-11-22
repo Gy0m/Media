@@ -1,4 +1,4 @@
 media:
-    resource: "@MediaBundle/Controller/"
+    resource: "@MediaBundle/Controller"
     type:     annotation
     prefix:   /

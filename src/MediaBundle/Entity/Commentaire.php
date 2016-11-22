@@ -96,7 +96,7 @@ class Commentaire
 	 * @ORM\ManyToOne(targetEntity="Album", inversedBy="commentaires", cascade={"remove"})
 	 * @ORM\JoinColumn(name="album_id", referencedColumnName="id")
 	 */
-	protected $album;
+	private $album;
 
     /**
      * Set album
