@@ -93,7 +93,7 @@ class Commentaire
     }
 
 	/**
-	 * @ORM\ManyToOne(targetEntity="Album", inversedBy="commentaires", cascade={"remove"})
+	 * @ORM\ManyToOne(targetEntity="Album", inversedBy="commentaires")
 	 * @ORM\JoinColumn(name="album_id", referencedColumnName="id")
 	 */
 	private $album;

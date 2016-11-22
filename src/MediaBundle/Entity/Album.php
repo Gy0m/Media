@@ -153,9 +153,10 @@ class Album
     }
 
 	/**
-	 * @ORM\OneToMany(targetEntity="Commentaire", mappedBy="album", cascade={"remove", "persist"})
+	 * @ORM\OneToMany(targetEntity="Commentaire", mappedBy="album")
+	 *
 	 */
-	private $commentaire;
+	private $commentaires;
 
     /**
      * Constructor
@@ -217,4 +218,14 @@ class Album
 		$this->id = $id;
 	}
 
+
+    /**
+     * Get commentaires
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCommentaires()
+    {
+        return $this->commentaires;
+    }
 }
